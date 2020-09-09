@@ -1,0 +1,145 @@
+.wrap {
+    background: url(./img/3S9sFMD.jpg) repeat-x;
+  }
+  .all {
+      width: 968px;   
+      margin: 0 auto;
+  }
+  a {
+     font-size: 13px;
+     text-decoration: none;
+  }
+  .clearfix:after
+  {
+      content:"";
+      display: block;
+      height:0;
+      clear:both;
+      visibility:hidden;
+  }
+  .head img {
+      float: left;
+      height: 44px;
+      margin-top: 14px;
+      margin-bottom: 15px;
+    
+   
+  }
+  .nav {
+      float: right;
+      padding-top: 21px; 
+     
+  }
+  .nav li {
+      float: left;
+      list-style: none;
+      text-align: center;
+      margin-left: 2px;
+  }
+  
+  .nav .home a {
+          /*1. a 左边放 左圆角   但是文字需要往右走 15px*/
+          height: 33px;
+          line-height: 33px;
+          color: #FFFFFF;
+          text-decoration: none;
+          background: url(./img/to.png) no-repeat;
+          display: inline-block;
+          padding-left: 15px;
+      }
+      
+      .nav .home span {
+          /*2. span 右边放右圆角   但是文字需要往左走 15px*/
+          background: url(./img/to.png) no-repeat right;
+          display: inline-block;
+          height: 33px;
+          padding-right: 15px;
+          
+      }
+      
+      .nav .faq a {
+          height: 33px;
+          line-height: 33px;
+          color: #FFFFFF;
+          text-decoration: none;
+          display: inline-block;
+          padding-left: 15px;
+      }
+      
+      .nav .faq span {
+          display: inline-block;
+          height: 33px;
+          padding-right: 15px;
+      }
+      
+      .nav .faq a:hover {
+          background: url(./img/ao.png) no-repeat;
+      }
+      
+      .nav .faq a:hover span {
+          font-weight: lighter;
+          background: url(./img/ao.png) right;
+      }
+      h1 {
+          position: relative;
+          font-size: 26px;
+          font-weight: 400;
+          margin-bottom: 24px;
+      }
+      .content  {
+          height: 424px;
+
+      }
+      .content .left {
+          margin-top: 54px;
+         
+          
+      }
+      .content .left p {
+          font-size: 16px;
+          color: #979797;
+          margin-bottom: 18px;
+      }
+      .content .left a{
+          margin-top: 10px;
+        
+      }
+      .content .dot {
+          float: left;
+          display: block;
+          margin: 2px 11px 0 0;
+          height: 6px;
+          width: 6px;
+          border-radius: 5px;
+          background-color: #999;
+      }
+     
+      .content .work {
+          margin-top: 20px;
+      }
+      .content .work a {
+          display: block;
+         font-size: 14px;
+         color: #609700;
+         margin-top: 10px;
+      }
+      .content .right{
+         position: absolute;
+         top: 100px;
+         left: 600px;
+      }
+      .content .right span {
+         display: block;
+         text-align: center;
+         font-size: 15px;
+         margin-top: 4px;
+      }
+      .content .right a {
+          display: block;
+          color: #609700;
+          text-align: center;
+          font-size: 17px;
+          margin-top: 5px;
+
+          
+      }

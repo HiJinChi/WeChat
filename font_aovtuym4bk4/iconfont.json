@@ -1,0 +1,16 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "2742621",
+      "name": "QQ",
+      "font_class": "QQ",
+      "unicode": "e666",
+      "unicode_decimal": 58982
+    }
+  ]
+}

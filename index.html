@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  
+    <link rel="stylesheet" href="./css/重置样式表.css">
+    <script src="./js/index.js"></script>
+    <script src="./js/jquery-3.5.1.js"></script>
+
+    <style>
+        .wrap {
+    background: url(./img/3S9sFMD.jpg) repeat-x;
+  }
+  .all {
+      width: 968px;   
+      margin: 0 auto;
+  }
+  a {
+     font-size: 13px;
+     text-decoration: none;
+  }
+  .clearfix:after
+  {
+      content:"";
+      display: block;
+      height:0;
+      clear:both;
+      visibility:hidden;
+  }
+  .head img {
+      float: left;
+      height: 44px;
+      margin-top: 14px;
+      margin-bottom: 15px;
+     
+  }
+ 
+  .nav {
+      float: right;
+      padding-top: 21px; 
+     
+  }
+  .nav li {
+      float: left;
+      list-style: none;
+      text-align: center;
+      margin-left: 2px;
+  }
+  
+  .nav .home a {
+          /*1. a 左边放 左圆角   但是文字需要往右走 15px*/
+          height: 33px;
+          line-height: 33px;
+          color: #FFFFFF;
+          text-decoration: none;
+          background: url(./img/to.png) no-repeat;
+          display: inline-block;
+          padding-left: 15px;
+      }
+      
+      .nav .home span {
+          /*2. span 右边放右圆角   但是文字需要往左走 15px*/
+          background: url(./img/to.png) no-repeat right;
+          display: inline-block;
+          height: 33px;
+          padding-right: 15px;
+          
+      }
+      
+      .nav .faq a {
+          height: 33px;
+          line-height: 33px;
+          color: #FFFFFF;
+          text-decoration: none;
+          display: inline-block;
+          padding-left: 15px;
+      }
+      
+      .nav .faq span {
+          display: inline-block;
+          height: 33px;
+          padding-right: 15px;
+      }
+      
+      .nav .faq a:hover {
+          background: url(./img/ao.png) no-repeat;
+      }
+      
+      .nav .faq a:hover span {
+          font-weight: lighter;
+          background: url(./img/ao.png) right;
+      }
+      h1 {
+          position: relative;
+          font-size: 26px;
+          font-weight: 400;
+          margin-bottom: 24px;
+      }
+      .content  {
+          height: 424px;
+
+      }
+      .content .left {
+          margin-top: 54px;
+         
+          
+      }
+      .content .left p {
+          font-size: 16px;
+          color: #979797;
+          margin-bottom: 18px;
+      }
+    
+      .content .left a{
+          margin-top: 10px;
+      }
+     .content .only {
+        display: block;
+          width: 224px;
+          height: 64px;
+          background: url(./img/btn2.png) no-repeat;
+     }
+     .content .only:hover{
+         background: url(./img/but.png) no-repeat;
+     }
+    
+      .content .left a:hover {
+          color: #333333;
+          text-decoration: underline;
+      }
+     .dot {
+          float: left;
+          display: block;
+          margin: 2px 11px 0 0;
+          height: 6px;
+          width: 6px;
+          border-radius: 5px;
+          background-color: #999;
+      }
+     
+      .content .work {
+          margin-top: 20px;
+      }
+      .content .work a {
+          display: block;
+         font-size: 14px;
+         color: #609700;
+         margin-top: 10px;
+      }
+
+    .foot .foot_x li {
+        float: left;
+    }
+    .foot_x .foot_x_first {
+        display: block;
+        width: 200px;
+        height: 114px;
+        background: url(./img/1oPgjZ4.png) no-repeat;
+        margin-right: 16px;
+    }
+    .foot_x .foot_x_second {
+        display: block;
+        width: 200px;
+        height: 114px;
+        background: url(./img/1oPgjZ4.png) no-repeat -217px 0px;
+        margin-right: 16px;
+    }
+    .foot_x .foot_x_third {
+        display: block;
+        width: 200px;
+        height: 114px;
+        background: url(./img/1oPgjZ4.png) no-repeat -434px 0px;
+        margin-right: 16px;
+    }
+    .foot_x h2,p {
+       
+        margin-top: 12px;
+        font-size: 13px;
+    
+    }
+    .foot_x h2 {
+        font-weight: bold;
+    }
+    .foot_x .foot_x_next {
+        display: block;
+        margin-top: 12px;
+        font-size: 14px;
+        color: #609700;        
+    }
+    .foot_x_next:hover{
+        color: #333333;
+          text-decoration: underline;
+    }
+    .foot_x p {
+        color: #999999;
+        
+    }
+    .foot_y {
+        float: left;
+        
+    }
+    .foot_y li {
+        
+        margin-top: 18px;
+    }
+    
+    .foot_y h2 {
+        font-weight: bold;
+        font-size: 13px;
+     
+    }
+    .foot_y .r {
+        color: red;
+        font-size: 12px;
+    }
+    .foot_y a {
+        color: #609700;
+        font-size: 14px;
+    }
+    .foot_y a:hover {
+        color: #333333;
+        text-decoration: underline;
+    }
+    .foot_y .turn {
+        float: right;
+        margin-left: 8px;
+        font-size: 14px;
+        color: #999999;
+       
+    }
+    .foot_y .logo {
+        margin-top: 25px;
+        
+        
+    }
+    .foot_y .logo img {
+        position: relative;
+        margin-right: 5px;
+    }
+    .foot_y .logo_c {
+      position: absolute;
+      top: 935px;
+      left: 880px;
+    }
+    .foot_y .logo_c a {
+        color: black;
+        font-weight: bold;
+        font-size: 13px;
+    }
+    .info_f {
+        border-top: 1px solid #d4dadf;
+        margin-top: 430px;
+    }
+    .info_f li {
+        float: left;
+        margin-top: 10px;
+        
+    }
+    .info a {
+        color: #888888;
+    }
+    .info span {
+        position: relative;
+        margin-left: 7px;
+        margin-right: 7px;
+    }
+    .info_f p {
+        position: absolute;
+        color: #888;
+        font-size: 11px;
+        margin: 5px 0;
+        top: 1010px;
+    }
+    .info_f a:hover {
+        
+        color: #333333;
+        text-decoration: underline;
+    }
+    
+    .info_s ul {
+        float: right;
+        margin-top: 10px;
+    }
+    .info_s ul li {
+        float: left;
+    }
+    .info_s a:hover{
+        
+        color: #333333;
+        text-decoration: underline;
+    }
+    .right {
+        position: absolute;
+        top: 123px;
+        left: 625px;
+
+        width: 490px;
+        height: 404px;
+    }
+    .list {
+        position: relative;
+    }
+    .item {
+        position: absolute;
+       
+    }
+    .active {
+       z-index: 100;
+    }
+    #btn_x {
+        
+        position: absolute;
+        display: none;
+        z-index: 1000;
+        top: 117px;
+        height: 100px;
+        width: 42px;
+        height: 42px;
+        background: url(./img/DxopYJv.png) no-repeat -16px -59px;
+    }
+    
+    #btn_y {
+        position: absolute;
+        display: none;
+        z-index: 1000;
+        top: 117px;
+        left: 455px;
+        width: 42px;
+        height: 42px;
+        background: url(./img/DxopYJv.png) no-repeat -70px -60px;
+    }
+    .what {
+       position: absolute;
+       top: 468px;
+       left: 822px;
+    }
+    .what_f {
+        float: left;
+        width: 26px;
+        height: 26px;
+        
+        margin-right: 10px;
+        background: url(./img/DxopYJv.png) no-repeat -36px -110px;
+    }
+     .what_f:hover{
+        background: url(./img/DxopYJv.png) no-repeat -12px -110px;
+     }
+     .what_g{
+        
+        background: url(./img/DxopYJv.png) no-repeat -12px -110px;
+     }
+     .item .sp {
+         display: block;
+       text-align: center;
+       line-height: 20px;
+      margin-top: 10px;
+     }
+     .last {
+         display: block;
+       
+         text-align: center;
+         color: #609700;
+         font-size: 15px;
+         margin-top: 5px;
+         
+     }
+    </style>  
+
+</head>
+<body>
+    <div class="wrap ">
+        <div class="all ">
+            <div class="head clearfix" >
+                <a href="#"><img src="./img/head_picture.png" alt=""></a>
+                <ul class="nav">
+                    <li class="home" ><a href="#"><span>首页</span></a></li>
+                    <li class="faq"><a href="./Tencent_customer_service.html" target="_blank"><span>帮助与反馈</span></a></li>
+                    <li class="faq"><a href="#"><span>公众平台</span></a></li>
+                    <li class="faq"><a href="#"><span>开放平台</span></a></li>
+                    <li class="faq"><a href="#"><span>微信支付</span></a></li>
+                    <li class="faq"><a href="#"><span>微信广告</span></a></li>
+                    <li class="faq"><a href="#"><span>企业微信</span></a></li>
+                    <li class="faq"><a href="#"><span>表情开放平台</span></a></li>
+                    <li class="faq"><a href="#"><span>微信网页版</span></a></li>
+                </ul>
+               
+            
+            </div>
+            <div class="content">
+               <div class="left">
+                <h1><span>微信，是一种生活方式</span></h1>
+                <p>超过十亿人使用的手机应用</p>
+                <p>支持发送语音短信、视频、文字和图片</p>
+                <p>可以群聊，仅耗少量流量，适合大部分智能手机</p>
+                <a href="#" class="only"></a>
+                <ul class="work">
+                    <li>
+                        <span class="dot"></span>
+                        <a href="#">忘记了微信账号和密码?</a>
+                    </li>
+                    <li>
+                        <span class="dot"></span>
+                        <a href="#">自动解除登录和微或功能限制?</a>
+                    </li>
+                    <li>
+                        <span class="dot"></span>
+                        <a href="#">冻结或解冻微信账号?</a>
+                    </li>
+                </ul>
+               </div>
+               <!-- //轮播图 -->
+                 <div class="right">
+                     <ul class="list">
+                         <li class="item">
+                            <a href="#"><img src="./img/move1.png" alt=""></a>
+                            <span class="sp"> 微信 2.4.1 for Mac 发布 </span>
+                            <a href="#" class="last">Mac 2.4.1</a>
+                        
+
+                         </li>
+                         <li class="item " style="display: none;">
+                            <a href="#"><img src="./img/move2.png" alt=""></a>
+                            <span class="sp"> 微信 for iOS / Android </span>
+                            <a href="#" class="last">iOS 7.0.13 Android 7.0.15</a>
+                           
+                        </li>
+                        <li class="item " style="display: none;">
+                            <a href="#"><img src="./img/move3.png" alt=""></a>
+                            <span class="sp"> 微信 2.9.0 for Windows 发布 </span>
+                            <a href="#" class="last">Windows 2.9.0</a>
+                        </li>
+                     </ul>
+                    <div id="btn_x"></div>
+                    <div id="btn_y"></div>
+                </div>
+                <ul class="what">
+                    <li class="what_f what_g"></li>
+                    <li class="what_f"></li>
+                    <li class="what_f"></li>
+                </ul>
+            </div>
+            <div class="foot">
+                <div class="foot_x">
+                    <ul>
+                        <li >
+                            <a href="#" class="foot_x_first"></a>
+                          
+                            <h2 >微信网页版</h2>
+                            <p >扫一扫二维码</p>
+                            <p >就能在浏览器上使用微信</p>
+                            <a href="#" class="foot_x_next">了解更多</a>
+                        </li>
+                        <li>
+                            <a href="#" class="foot_x_second"></a>
+                            <h2>微信Mac版</h2>
+                            <p>极致简洁,迅速沟通</p>
+                            <a href="#" class="foot_x_next">了解更多</a>
+                        </li>
+                        <li>
+                            <a href="#" class="foot_x_third"></a>
+                            <h2>微信Windows版</h2>
+                            <p>让沟通更方便</p>
+                            <a href="#" class="foot_x_next">了解更多</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="foot_y">
+                    <h2>最新消息</h2>
+                    <ul>
+                        <li>
+                            <span class="dot"></span>
+                            <span class="turn">06-16</span>
+                            <a href="#">微信 7.0.13 for iOS 正式版发布</a>
+                            <span class="r">(New)</span>
+                        </li>
+                        <li>
+                            <span class="dot"></span>
+                            <span class="turn">05-28</span>
+                            <a href="#">微信 7.0.15 for Android 正式版发布</a>
+                            <span class="r">(New)</span>
+                        </li>
+                        <li>
+                            <span class="dot"></span>
+                            <span class="turn">05-20</span>
+                            <a href="#">微信 2.4.1 for Mac 正式版发布</a>
+                            <span class="r">(New)</span>
+                        </li>
+                        <li>
+                            <span class="dot"></span>
+                            <span class="turn">04-16</span>
+                            <a href="#">微信 2.9.0 for Windows 正式版发布</a>
+                            <span class="r">(New)</span>
+                        </li>
+                        <li>
+                            <span class="dot"></span>
+                            <span class="turn">01-28</span>
+                            <a href="#">关于部分 iOS 9 用户无法更新微信</a>
+                            <span class="r">(New)</span>
+                        </li>
+                        <li>
+                            <span class="dot"></span>
+                            <span class="turn">02-11</span>
+                            <a href="#">微信外部链接内容管理规范</a>
+                        </li>
+                        <li>
+                            <span class="dot"></span>
+                            <span class="turn">01-17</span>
+                            <a href="#">微信网页版 2.1 版本发布</a>
+                        </li>
+                        <li>
+                            <span class="dot"></span>
+                            <span class="turn">07-29</span>
+                            <a href="#">微信表情开放平台上线</a>
+                        </li>
+                        <li>
+                            <span class="dot"></span>
+                            <span class="turn">10-28</span>
+                            <a href="#">官方辟谣公众号开通</a>
+                        </li>
+                        <li>
+                            <a href="#">查看更多</a>
+                        </li>
+                       
+                    </ul>
+                    <div class="logo">
+                      <img src="./img/1L3ryyg.png" alt="">
+                    </div>
+                    <div class="logo_c">
+                        <a href="#">联系我们</a>
+                    </div>
+                    
+                </div>
+                
+            </div>
+            <div class="info">
+                <div class="info_f">
+                    <ul>
+                        <li>
+                            <a href="#">关于腾讯</a>
+                            <span>|</span>
+
+                        </li>
+                        <li>
+                            <a href="#">服务条款</a>
+                            <span>|</span>
+                        </li>
+                        <li>
+                            <a href="#">使用条款</a>
+                            <span>|</span>
+                        </li>
+                        <li>
+                            <a href="#">客服中心</a>
+                            <span>|</span>
+                        </li>
+                        <li>
+                            <a href="#">隐私保护指引</a>
+                           
+                        </li>
+                    </ul>
+                      <p>© 1998 - 2020 Tencent Inc. All Rights Reserved</p> 
+                </div>
+                <div class="info_s">
+                    <ul>
+                        <li>
+                            <a href="#">简体中文</a>
+                            <span>|</span>
+                        </li>
+                        <li>
+                            <a href="#">繁體中文</a>
+                            <span>|</span>
+                        </li>
+                        <li>
+                            <a href="#">English</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+         
+    </div>
+</body>
+</html>
